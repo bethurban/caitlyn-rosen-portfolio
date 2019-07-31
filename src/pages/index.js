@@ -71,6 +71,8 @@ const IndexPage = ({
             excerpt={post.excerpt}
             timeToRead={post.timeToRead}
             url={post.frontmatter.url}
+            source={post.frontmatter.source}
+            sourceUrl={post.frontmatter.sourceUrl}
             categories={post.frontmatter.categories}
             key={post.fields.slug}
           />
@@ -102,9 +104,10 @@ export const IndexQuery = graphql`
           date(formatString: "MM/DD/YYYY")
           categories
           url
+          source
+          sourceUrl
         }
-        excerpt(pruneLength: 200)
-        timeToRead
+        excerpt(pruneLength: 500)
       }
     }
   }
