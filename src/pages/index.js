@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
+import Caitlyn from './caitlyn.jpeg'
+import './index.css'
 
 import { Layout, Article, Wrapper, Button, SectionTitle } from '../components'
 
@@ -49,6 +51,7 @@ const IndexPage = ({
   <Layout>
     <Wrapper>
       <Hero>
+        <img src={ Caitlyn } id="Caitlyn" />
         <h1>Caitlyn Rosen</h1>
         <p>
           I am a journalism student with an emphasis in investigative reporting at the University of Missouri School of Journalism. I have a passion for combining policy reporting with in-depth, human storytelling.
