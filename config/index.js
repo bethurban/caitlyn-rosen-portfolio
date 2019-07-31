@@ -4,18 +4,18 @@ module.exports = {
   siteTitle: 'Caitlyn Rosen', // Navigation and Site Title
   siteTitleAlt: 'Caitlyn Rosen - Reporter, Journalism Student', // Alternative Site title for SEO
   siteTitleManifest: 'CaitlynRosen',
-  siteUrl: 'https://minimal-blog.lekoarts.de', // Domain of your site. No trailing slash!
+  siteUrl: 'https://caitlynrosen.netlify.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
-  siteHeadline: 'Writing and publishing content', // Headline for schema.org JSONLD
-  siteBanner: '/social/banner.jpg', // Your image for og:image tag. You can find it in the /static folder
-  favicon: 'src/favicon.png', // Your image for favicons. You can find it in the /src folder
+  siteHeadline: 'Caitlyn Rosen portfolio', // Headline for schema.org JSONLD
+  // siteBanner: '/social/banner.jpg', // Your image for og:image tag. You can find it in the /static folder
+  favicon: 'src/favicon.ico', // Your image for favicons. You can find it in the /src folder
   siteDescription: 'I am a journalism student with an emphasis in investigative reporting at the University of Missouri School of Journalism.', // Your site description
   author: 'Beth Urban', // Author for schemaORGJSONLD
-  siteLogo: '/social/logo.png', // Image for schemaORGJSONLD
+  // siteLogo: '/social/logo.png', // Image for schemaORGJSONLD
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
-  userTwitter: '@minimal', // Twitter Username - Optional
-  ogSiteName: 'minimal', // Facebook Site Name - Optional
+  // userTwitter: '@minimal', // Twitter Username - Optional
+  // ogSiteName: 'minimal', // Facebook Site Name - Optional
   ogLanguage: 'en_US', // Facebook Language
   googleAnalyticsID: 'UA-47519312-6',
 
