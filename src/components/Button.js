@@ -3,6 +3,7 @@ import styled from 'styled-components'
 const Button = styled.button`
   background: ${props => props.theme.colors.primary};
   border: none;
+  margin: 0px 5px;
   display: inline-flex;
   align-items: center;
   border-radius: ${props => (props.big ? '1.5rem' : '1rem')};
