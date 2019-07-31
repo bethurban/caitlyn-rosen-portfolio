@@ -49,10 +49,9 @@ const IndexPage = ({
   <Layout>
     <Wrapper>
       <Hero>
-        <h1>Hi.</h1>
+        <h1>Caitlyn Rosen</h1>
         <p>
-          I&apos;m John Doe, a Senior UX Developer with five years of industry experience, specializing in developing
-          React apps with the best UX users can get.
+          I am a journalism student with an emphasis in investigative reporting at the University of Missouri School of Journalism. I have a passion for combining policy reporting with in-depth, human storytelling.
         </p>
         <Link to="/contact">
           <Button big>
@@ -64,7 +63,7 @@ const IndexPage = ({
         </Link>
       </Hero>
       <Content>
-        <SectionTitle>Latest stories</SectionTitle>
+        <SectionTitle>Portfolio</SectionTitle>
         {posts.map(post => (
           <Article
             title={post.frontmatter.title}
