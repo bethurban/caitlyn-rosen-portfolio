@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
+import Twitter from './Twitter_Logo_WhiteOnImage.svg'
 
 import { Layout, Article, Wrapper, Button, SectionTitle } from '../components'
 
@@ -61,6 +62,12 @@ const IndexPage = ({
             Contact
           </Button>
         </Link>
+        <Button big onclick="window.location.href = 'https://twitter.com/RosenCaitlyn';">
+          <svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+            <img src={ Twitter } />
+          </svg>
+          Twitter
+        </Button>
       </Hero>
       <Content>
         <SectionTitle>Portfolio</SectionTitle>
@@ -69,7 +76,6 @@ const IndexPage = ({
             title={post.frontmatter.title}
             date={post.frontmatter.date}
             excerpt={post.excerpt}
-            timeToRead={post.timeToRead}
             url={post.frontmatter.url}
             source={post.frontmatter.source}
             sourceUrl={post.frontmatter.sourceUrl}
