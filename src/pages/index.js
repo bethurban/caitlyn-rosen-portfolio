@@ -70,7 +70,7 @@ const IndexPage = ({
             date={post.frontmatter.date}
             excerpt={post.excerpt}
             timeToRead={post.timeToRead}
-            slug={post.fields.slug}
+            url={post.frontmatter.url}
             categories={post.frontmatter.categories}
             key={post.fields.slug}
           />
@@ -101,6 +101,7 @@ export const IndexQuery = graphql`
           title
           date(formatString: "MM/DD/YYYY")
           categories
+          url
         }
         excerpt(pruneLength: 200)
         timeToRead

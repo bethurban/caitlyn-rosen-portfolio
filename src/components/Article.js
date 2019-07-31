@@ -45,14 +45,14 @@ const Excerpt = styled.p`
   margin-bottom: 1rem;
 `
 
-const Article = ({ title, date, excerpt, slug, timeToRead, categories }) => {
+const Article = ({ title, date, excerpt, url, timeToRead, categories }) => {
   const firstChar = title.charAt(0)
 
   return (
     <Post>
       <Title>
         <Initiale>{firstChar}</Initiale>
-        <Link to={slug}>{title}</Link>
+        <a href={url} target="_blank">{title}</a>
       </Title>
       <Subline>
         {date} &mdash; {timeToRead} Min Read &mdash; In{' '}
@@ -74,7 +74,7 @@ Article.propTypes = {
   title: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   excerpt: PropTypes.string.isRequired,
-  slug: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
   timeToRead: PropTypes.number.isRequired,
   categories: PropTypes.array.isRequired,
 }
