@@ -45,7 +45,7 @@ const Excerpt = styled.p`
   margin-bottom: 1rem;
 `
 
-const Article = ({ title, date, excerpt, url, source, sourceUrl, categories }) => {
+const Article = ({ title, date, excerpt, url, source, sourceUrl }) => {
   const firstChar = title.charAt(0)
 
   return (
@@ -55,13 +55,7 @@ const Article = ({ title, date, excerpt, url, source, sourceUrl, categories }) =
         <a href={url} target="_blank">{title}</a>
       </Title>
       <Subline>
-        {date} &mdash; <a href={sourceUrl} target="_blank">{source}</a> &mdash; In{' '}
-        {categories.map((cat, i) => (
-          <React.Fragment key={cat}>
-            {!!i && ', '}
-            <Link to={`/categories/${kebabCase(cat)}`}>{cat}</Link>
-          </React.Fragment>
-        ))}
+        {date} &mdash; <a href={sourceUrl} target="_blank">{source}</a>
       </Subline>
       <Excerpt>{excerpt}</Excerpt>
     </Post>
@@ -75,7 +69,6 @@ Article.propTypes = {
   date: PropTypes.string.isRequired,
   excerpt: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
-  categories: PropTypes.array.isRequired,
   source: PropTypes.string.isRequired,
   sourceUrl: PropTypes.string.isRequired
 }

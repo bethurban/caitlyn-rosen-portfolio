@@ -53,17 +53,21 @@ const IndexPage = ({
         <p>
           I am a journalism student with an emphasis in investigative reporting at the University of Missouri School of Journalism. I have a passion for combining policy reporting with in-depth, human storytelling.
         </p>
-        <Link to="/contact">
+        <a href="mailto:rosencaitlyn@gmail.com" target="_blank">
           <Button big>
-            Contact
+            Email
           </Button>
-        </Link>
-        <Button big onclick="window.location.href = 'https://twitter.com/RosenCaitlyn';">
-          LinkedIn
-        </Button>
-        <Button big onclick="window.location.href = 'https://twitter.com/RosenCaitlyn';">
-          Twitter
-        </Button>
+        </a>
+        <a href="https://www.linkedin.com/in/caitlyn-r-938a42b9/" target="_blank">
+          <Button big>
+            LinkedIn
+          </Button>
+        </a>
+        <a href="https://twitter.com/RosenCaitlyn" target="_blank">
+          <Button big>
+            Twitter
+          </Button>
+        </a>
       </Hero>
       <Content>
         <SectionTitle>Portfolio</SectionTitle>
@@ -75,7 +79,6 @@ const IndexPage = ({
             url={post.frontmatter.url}
             source={post.frontmatter.source}
             sourceUrl={post.frontmatter.sourceUrl}
-            categories={post.frontmatter.categories}
             key={post.fields.slug}
           />
         ))}
